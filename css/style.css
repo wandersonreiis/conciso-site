@@ -1,0 +1,246 @@
+/* Corrige a rolagem suave para facilitar a navegação */
+html {
+    scroll-behavior: smooth; /* Rolagem suave */
+    scroll-padding-top: 60px; /* Corrige a rolagem para deixar o conteúdo visível com a navbar fixa */
+}
+
+/* Evitar que o conteúdo fique por baixo da navbar fixa */
+body {
+    margin-top: 0; /* Remove margens desnecessárias no body */
+}
+
+/* Estilo das seções de conteúdo */
+section {
+    padding-top: 60px; /* Evita sobreposição com a navbar */
+}
+
+/* Seções de conteúdo específicas */
+#home, #sobre, #servicos, #contato {
+    padding-top: 100px; /* Ajusta o valor conforme a altura da navbar */
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 4rem 2rem;
+}
+
+/* Estilo de rodapé */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* Estilo para a imagem do logo */
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Estilo dos cards */
+.card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+}
+
+/* Estilo customizado para a navbar flutuante */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Garantir que o menu fique sobre os outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para destacar o menu */
+}
+
+/* Ajuste de estilo para os links da navbar */
+.nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+/* Animação suave para os objetivos */
+
+
+
+
+/* Efeito de hover nos cards */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao card */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Personalização de texto e espaçamento */
+.card-body {
+    padding: 1.5rem;
+    min-height: 100px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Ajustes de responsividade para os cards */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.objetivo-item {
+    margin-bottom: 30px; /* Espaçamento entre os cards */
+  }
+  
+  .card {
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  }
+  
+  /* Ajustes de responsividade para os cards */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+/* Espaçamento entre os cards */
+.objetivo-item {
+    margin-bottom: 30px; /* Espaçamento inferior para todos os cards */
+}
+
+/* Garantir bordas arredondadas e um efeito suave nos cards */
+.card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Ajustes de responsividade para os cards */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .col-6 {
+        padding: 10px; /* Garantir que os cards não fiquem colados */
+    }
+}
+
+/* Correção de espaçamento nos cards */
+.objetivo-item {
+    margin-bottom: 30px; /* Ajusta o espaçamento entre os cards */
+  }
+  
+  /* Ajuste do grid, garantindo 100% de largura em telas menores */
+  .col-6 {
+    padding: 15px; /* Um pouco de padding para garantir que os cards não fiquem tão colados */
+  }
+  
+
+  
+  /* Responsividade adicional */
+  @media (max-width: 768px) {
+    .col-6 {
+      margin-bottom: 20px; /* Margem para garantir que o conteúdo não fique sobreposto em dispositivos móveis */
+    }
+  }
+  
+
+  /* Ajustar os cards para telas menores */
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; /* Faz os cards ocuparem toda a largura da tela */
+        padding: 10px; /* Espaçamento entre os cards */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Espaçamento inferior nos cards */
+        width: 100%; /* Garante que os cards se ajustem à largura */
+    }
+}
+/* Ajustar os cards para telas menores */
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; /* Faz os cards ocuparem toda a largura da tela */
+        padding: 10px; /* Espaçamento entre os cards */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Espaçamento inferior nos cards */
+        width: 100%; /* Garante que os cards se ajustem à largura */
+    }
+}
+/* Ajustar o padding das seções para dispositivos menores */
+@media (max-width: 768px) {
+    section {
+        padding-top: 50px; /* Reduz o padding-top para telas pequenas */
+    }
+
+    #home, #sobre, #servicos, #contato {
+        padding-top: 60px; /* Ajusta para que o conteúdo não fique escondido em dispositivos menores */
+    }
+}
+/* Ajustar o logo da navbar para telas pequenas */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-width: 120px; /* Ajusta o tamanho máximo do logo */
+        height: auto; /* Garante que o logo não perca a proporção */
+    }
+}
+
+
+/* Ajustes de tamanho de fonte para telas pequenas */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Reduz o tamanho da fonte para melhor legibilidade */
+    }
+
+    .card-title {
+        font-size: 1.1rem; /* Ajusta o tamanho da fonte dos títulos */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte do texto dos cards */
+    }
+
+    .jumbotron h1 {
+        font-size: 2rem; /* Ajusta o tamanho do título da seção Home */
+    }
+
+    .jumbotron p {
+        font-size: 1rem; /* Ajusta o tamanho do texto da seção Home */
+    }
+}
+
+
